@@ -7,7 +7,10 @@ public class GameManagerBehaviour : MonoBehaviour
 {
     public Text goldLabel;
     private int gold;
-    public int Gold 
+    public Text waveLabel;
+    public GameObject[] nextWaveLabels;
+
+    public int Gold
         {   
                 get { return gold; }
                 set
