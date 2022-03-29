@@ -12,6 +12,18 @@ public class MoveEnemy : MonoBehaviour
     private float lastWaypointSwitchTime;
     public float speed = 1.0f;
 
+    public float DistanceToGoal()
+    {
+        float distance = Vector2.Distance(gameObject.transform.position, waypoints[currentWaypoint + 1].transform.position);
+        for (int i = currentWaypoint + 1; i < waypoints.Length - 1; i++)
+    {
+        Vector3 startPosition = waypoints[i].transform.position;
+        Vector3 endPosition = waypoints[i + 1].transform.position;
+        distance += Vector2.Distance(startPosition, endPosition);
+    }
+        return distance;
+    }
+    
 
     void Start()
     {
