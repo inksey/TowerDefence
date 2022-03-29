@@ -46,6 +46,7 @@
      <Compile Include="Assets\Scripts\SpawnEnemy.cs" />
      <Compile Include="Assets\Scripts\Tutorial.cs" />
      <Compile Include="Assets\Scripts\ShootEnemies.cs" />
+     <Compile Include="Assets\Scripts\BulletBehaviour.cs" />
      <None Include="Assets\Font\readme.txt" />
     <Reference Include="UnityEngine">
         <HintPath>/Applications/Unity/Hub/Editor/2020.3.14f1/Unity.app/Contents/Managed/UnityEngine/UnityEngine.dll</HintPath>
